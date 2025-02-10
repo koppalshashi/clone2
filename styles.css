@@ -97,7 +97,7 @@ body {
 
 .upcoming-events {
     color: red;
-    width: 120%; /* Adjust width as needed */
+    width: 100%; /* Adjust width as needed */
     padding: 50px;
     background-color:#333;
     border-radius: 10px;
