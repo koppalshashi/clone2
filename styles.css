@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+header .logo h1 {
+    margin: 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    flex: 1;
+    text-align: right;
+    justify-content:top;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero {
+    background: #e2e2e2;
+    padding: 50px 20px;
+    text-align: center;
+}
+.hero h2 {
+    margin-bottom: 20px;
+}
+.btn {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* News Ticker Styles */
+.news-ticker {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 5px 0; /* Padding for the ticker */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Bold text */
+    font-size: 20px; /* Font size */
+    position: relative; /* Positioning */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+/* time */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: left;
+
+}
+.date-time {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align:left;
+}
+/* time :end */
+
+/* Upcoming Events */
+.upcoming {
+    background-color: #1b9eb6;
+    width: 30%; /* Increased the width of the event section */
+    max-width: 600px; /* Adjusted max-width to keep it responsive */
+    padding: 30px; /* Increased padding for more spacing */
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; /* Centering the section */
+}
+
+.upcoming-events h3 {
+    color: red;
+    text-align: center;
+    font-size: 1.5em; /* Increased the font size for the heading */
+}
+
+.upcoming-events ul {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    animation: scroll-up 12s linear infinite; /* Slower animation */
+    text-align: left;
+}
+
+.upcoming-events li {
+    margin-bottom: 15px; /* Increased space between list items */
+    color: yellow;
+    text-align: left;
+    font-size: 1.2em; /* Increased font size for better readability */
+}
+
+/* Media Queries */
+@keyframes scroll-up {
+    0% {
+        transform: translateY(100%); /* Start from below the visible area */
+    }
+    100% {
+        transform: translateY(-2%); /* Move to above the visible area */
+    }
+}
+/* upcoming events :end */
+
+
+@media (max-width: 768px) {
+    /* Styles for devices with a width of 768px or less */
+    .timetable-events {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .monday-timetable, .upcoming-events {
+        width: 100%; /* Full width on mobile */
+        margin: 0; /* Remove margins */
+    }
+}
+
