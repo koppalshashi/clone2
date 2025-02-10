@@ -87,41 +87,47 @@ body {
 /* time :end */
 
 /* Upcoming Events */
-.upcoming {
-    background-color: #1b9eb6;
-    width: 30%; /* Increased the width of the event section */
-    max-width: 600px; /* Adjusted max-width to keep it responsive */
-    padding: 30px; /* Increased padding for more spacing */
-    overflow: hidden;
-    position: relative;
-    text-align: left;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto; /* Centering the section */
+/* upcoming events */
+.timetable-events {
+    display: flex; /* Use flexbox to align items side by side */
+    justify-content: space-between; /* Space between the timetable and events */
+    margin-bottom: 20px; /* Space below the section */
+    position: relative; /* Position relative for absolute positioning of events */
 }
 
-.upcoming-events h3 {
+.upcoming-events {
     color: red;
-    text-align: center;
-    font-size: 1.5em; /* Increased the font size for the heading */
+    width: 120%; /* Adjust width as needed */
+    padding: 50px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(188, 202, 33, 0.1);
+    overflow: hidden; /* Hide overflow for animation */
+    position: relative; /* Position relative for animation */
+}
+
+.upcoming-events h4 {
+    margin-bottom: 0%; /* Space below the heading */
+    background-color: white;
+    align-items: end;
+    
 }
 
 .upcoming-events ul {
-    list-style-type: none;
-    padding: 0;
-    position: relative;
-    animation: scroll-up 12s linear infinite; /* Slower animation */
-    text-align: left;
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    position: absolute; /* Position absolute for animation */
+    bottom: 0; /* Start from the bottom */
+    animation: scroll-up 6s linear infinite; /* Animation for scrolling */
+    color: #4CAF50;
 }
 
 .upcoming-events li {
-    margin-bottom: 15px; /* Increased space between list items */
-    color: yellow;
-    text-align: left;
-    font-size: 1.2em; /* Increased font size for better readability */
+    margin-bottom: 5px; /* Space between list items */
+    
 }
 
-/* Media Queries */
+/* Keyframes for scrolling animation */
 @keyframes scroll-up {
     0% {
         transform: translateY(100%); /* Start from below the visible area */
@@ -139,9 +145,6 @@ body {
         flex-direction: column; /* Stack elements vertically */
     }
 
-    .monday-timetable, .upcoming-events {
-        width: 100%; /* Full width on mobile */
-        margin: 0; /* Remove margins */
-    }
+   
 }
 
